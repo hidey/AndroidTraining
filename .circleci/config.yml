@@ -1,5 +1,7 @@
 version: 2
 
+general:
+  build_dir: AndroidStudio
 jobs:
   build:
     docker:
@@ -19,9 +21,6 @@ jobs:
       - run:
           name: Danger
           command: bundle exec danger
-      - run:
-          name: cd AndroidStudio
-          command: cd AndroidStudio
       - run:
           name: Download Dependencies
           command: ./gradlew androidDependencies
