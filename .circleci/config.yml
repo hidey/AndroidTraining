@@ -21,7 +21,7 @@ jobs:
           command: bundle exec danger
       - run:
           name: Download Dependencies
-          command: ./gradlew androidDependencies
+          command: ./gradlew dependencies
       - save_cache:
           key: sdks-licenses-build-tools-extras-{{ checksum "build.gradle" }}-{{ checksum "app/build.gradle" }}
           paths:
