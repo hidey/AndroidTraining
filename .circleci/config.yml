@@ -20,8 +20,11 @@ jobs:
           name: Danger
           command: bundle exec danger
       - run:
+          name: cd AndroidStudio
+          command: cd AndroidStudio
+      - run:
           name: Download Dependencies
-          command: ./gradlew dependencies
+          command: ./gradlew androidDependencies
       - save_cache:
           key: sdks-licenses-build-tools-extras-{{ checksum "build.gradle" }}-{{ checksum "app/build.gradle" }}
           paths:
