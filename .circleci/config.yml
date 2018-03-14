@@ -1,7 +1,5 @@
 version: 2
 
-general:
-  build_dir: AndroidStudio
 jobs:
   build:
     docker:
@@ -21,6 +19,8 @@ jobs:
       - run:
           name: Danger
           command: bundle exec danger
+      - attach_workspace:
+        at: AndroidStudio
       - run:
           name: ls
           command: ls -l
