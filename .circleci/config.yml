@@ -19,8 +19,8 @@ jobs:
       - run:
           name: Danger
           command: bundle exec danger
-      - attach_workspace:
-          at: AndroidStudio
+      - general:
+          build_dir: AndroidStudio
       - run:
           name: ls
           command: ls -l
