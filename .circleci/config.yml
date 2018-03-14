@@ -39,6 +39,7 @@ jobs:
       - run:
           name: Test
           command: ./gradlew --stacktrace lint testDebug
+          working_directory: AndroidStudio
           #      - store_artifacts:
           #path: app/build/reports
           #destination: reports
