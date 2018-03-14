@@ -19,8 +19,8 @@ jobs:
       - run:
           name: Danger
           command: bundle exec danger
-      - general:
-          build_dir: AndroidStudio
+      - run:
+          command: cd AndroidStudio
       - run:
           name: ls
           command: ls -l
