@@ -37,8 +37,7 @@ jobs:
           working_directory: AndroidStudio
       - run:
           name: Danger
-          command: bundle exec danger
-          working_directory: AndroidStudio
+          command: bundle exec danger --dangerfile="AndroidStudio/Dangerfile"
           #      - store_artifacts:
           #path: app/build/reports
           #destination: reports
