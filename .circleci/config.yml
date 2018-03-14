@@ -16,6 +16,7 @@ jobs:
       - run:
           name: bundle install
           command: bundle install
+          working_directory: AndroidStudio
       - run:
           name: Download Dependencies
           command: ./gradlew androidDependencies
