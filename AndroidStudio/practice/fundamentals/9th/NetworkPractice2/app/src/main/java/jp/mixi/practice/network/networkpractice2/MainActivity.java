@@ -1,5 +1,6 @@
 package jp.mixi.practice.network.networkpractice2;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.os.Build;
 import android.os.Bundle;
@@ -11,6 +12,7 @@ import android.widget.Button;
 
 public class MainActivity extends Activity {
 
+    @SuppressLint("NewApi")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         if (Build.VERSION.SDK_INT < Build.VERSION_CODES.HONEYCOMB) {

@@ -1,5 +1,6 @@
 package jp.mixi.assignment.network.networkAssignment;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.os.Build;
 import android.os.Bundle;
@@ -8,6 +9,7 @@ import android.view.Menu;
 
 public class MainActivity extends Activity {
 
+    @SuppressLint("NewApi")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
